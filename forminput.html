@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Contoh program javascript</title>
+    </head>
+    <script language="javascript">
+        function test () {
+        //trigger print out value dngan button 
+            var val1=document.kirim. T1. value
+            //inisialisasi variabel
+            if (val1%2==0)
+            //kondisi pertama val1%2=0 maka termasuk kedalam bil.genap
+            document.kirim.T2. value="bilangan genap"
+            //print out value kondisi pertama 
+            else
+            document.kirim.T2. value="bilangan ganjil"
+            //print out value selain kondisi pertama
+        }
+    </script>
+    <body>
+        <form method="POST" name="kirim">
+            <p>BIL <input type="text" name="T1" size="20"> Merupakan BIL 
+                <input type="text" name="T2" SIZE="20"></p>
+
+            <P><input type="button" value="TEBAK" 
+                name="B1" onclick=test()></P>
+        </form>
+    </body>
+</html>

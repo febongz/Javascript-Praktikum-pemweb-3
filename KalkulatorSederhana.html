@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Kalkulator Sederhana</title>
+        <style type="text/css">
+        .tabel{
+            background-color: greenyellow;
+            margin: 10px;
+            padding: 10px;
+            /*membuat class tabel dengan properti bekgron abuabu, margin dan padding 10px*/
+        }
+        </style>
+    </head>
+    <script language="Javascript">
+    //<!-
+    function penjumlahan() {
+        var val1=parseFloat(document.calculator. T1.value);
+        //membuat variabel val1 yang diinput melalui input type text T1
+        var val2=parseFloat(document.calculator. T2.value)
+        //membuat variabel val1 yang diinput melalui input type text T2
+        var hasil=val1+val2
+        //membuat variabel hasil dari penjumlahan T1&T2
+        document.calculator.T3.value = hasil;
+        //print T3 sama dengan variabel hasil
+    }
+    function pengurangan() {
+        var val1=parseFloat(document.calculator.T1.value);
+        //membuat variabel val1 yang diinput melalui input type text T1
+        var val2=parseFloat(document.calculator.T2.value);
+        //membuat variabel val1 yang diinput melalui input type text T2
+        var hasil=val1-val2;
+        //membuat variabel hasil dari pengurangan T1&T2
+        document.calculator.T3.value = hasil;
+        //print T3 sama dengan variabel hasil
+    }
+    function perkalian() {
+        var val1=parseFloat(document.calculator.T1.value);
+        //membuat variabel val1 yang diinput melalui input type text T1
+        var val2=parseFloat(document.calculator.T2.value);
+        //membuat variabel val1 yang diinput melalui input type text T2
+        var hasil=val1*val2;
+        //membuat variabel hasil dari perkalian T1&T2
+        document.calculator.T3.value = hasil;
+        //print T3 sama dengan variabel hasil
+    }
+    function pembagian() {
+        var val1=parseFloat(document.calculator. T1.value);
+        //membuat variabel val1 yang diinput melalui input type text T1
+        var val2=parseFloat(document.calculator. T2.value);
+        //membuat variabel val1 yang diinput melalui input type text T2
+        var hasil=val1/val2;
+        //membuat variabel hasil dari pembagian T1&T2
+        document.calculator.T3.value = hasil;
+        //print T3 sama dengan variabel hasil
+    }
+    </script>
+    <body>
+        <form name="calculator"> <!---->
+        <table style="background-color: " class="tabel" align="center">
+        <!--membuat tabel-->
+        <caption>calculator</caption>
+        <tr>
+            <td>Billangan 1</td><td><input type="number" value="T1" name="T1"></td>
+            <!--membuat type input bilangan 1 dengan value T1-->
+        </tr>
+        <tr>    
+            <td>Billangan 2</td><td><input type="number" value="T2" name="T2"></td>
+             <!--membuat type input bilangan 2 dengan value T2-->
+        </tr>
+        <tr>
+            <td>Hasil</td><td><input type="number" name="T3"></td>
+            <!--membuat baris hasil dengan value hasil-->
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+            <input type="button" name="b1" value="+" onclick=penjumlahan()>
+            <!--membuat button + -->
+            <input type="button" name="b2" value="-" onclick=pengurangan()>
+            <!--membuat button - -->
+            <input type="button" name="b3" value="*" onclick=perkalian()>
+            <!--membuat button * -->
+            <input type="button" name="b4" value="/" onclick=pembagian()>
+            <!--membuat button / -->
+            </td>
+        </tr>
+        </table>
+        </form>
+    </body>
+</html>

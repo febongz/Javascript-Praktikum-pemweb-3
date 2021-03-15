@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <title>Konversi angka menjadi huruf</title>
+    </head>
+    <script language="Javascript">
+    //<!-
+    function test(){
+    //membuat function test
+    var val1 =window.prompt("Nilai (0-100): ", 0)
+    //input variabel val1 dengan nilai 0-100 dengan windowpromtp
+    var hasil = "" 
+    //variabel hasil
+    if(val1<=40)
+    hasil = "E";
+    //kondisi val1>=40 maka hasil = E
+    else if(val1>=41 || val1<=55)
+    hasil = "D";
+    //selain itu apabila val1>=41 dan <=55 maka hasil = D
+    else if(val1>=56 || val1<=60)
+    hasil = "C";
+    //selain itu apabila val1>=56 dan <=60 maka hasil = C
+    else if(val1>=61 || val1<=65)
+    hasl = "BC";
+    //selain itu apabila val1>=61 dan <=65 maka hasil = BC
+    else if(val1>=66 || val1<=70)
+    hasil = "B";
+    //selain itu apabila val1>=46 dan <=70 maka hasil = B
+    else if(val1>=71 || val1<=80)
+    hasil = "AB";
+    //selain itu apabila val1>=71 dan <=80 maka hasil = AB
+    else
+    hasil = "A";
+    //selain itu maka hasil = A
+    document.write("Hasil Konversi = " + hasil)
+    //print out "Hasil Konversi"
+    }
+    //->
+    </script>
+    <body>
+        <input type="button" name="button1" value="konversi" onclick=test()>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Contoh Program Javascript
+        </title>
+        <script language ="Javascript">
+            function test()
+            {
+                val1=window.prompt("Input Nilai (1-5):")
+                //untuk input nilai val1 menggunakan win prompt
+                switch (val1)
+                //print out value val1
+
+            {
+                case "1":
+                document.write("bilangan 1")
+                //value val1 apabila 1 maka bilangan 1
+                break
+
+                case "2":
+                document.write("bilangan 2")
+                break
+
+                case "3":
+                document.write("bilangan 3")
+                break
+
+                case "4":
+                document.write("bilangan 4")
+                break
+
+                case "5":
+                document.write("bilangan 5")
+                break
+
+                default:
+                document.write("bilangan lainnya")
+                //print out value apabila nilai tidak termasuk 1-5
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" name="button1" value="switch" onclick=test()>
+    </body>
+</html>
